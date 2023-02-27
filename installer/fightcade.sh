@@ -123,7 +123,7 @@ if [[ -f "$p1" ]] && [[ -f "$p2" ]] && [[ -f "$p3" ]] && [[ -f "$p4" ]] && [[ -f
     p7m=$(md5sum $p7 | awk '{print $1}')
     p8m=$(md5sum $p8 | awk '{print $1}')
     p9m=$(md5sum $p9 | awk '{print $1}')
-    if [[ "$p1m" = "38e21dc62048b23cbe43d6de0914f97f" ]] && [[ "$p2m" = "5c601b1608990d12191ae33d301b2ca0" ]] && [[ "$p3m" = "12ccf39c925d1e12783acae2aa957490" ]] && [[ "$p4m" = "0381e60bf464ae2796ccbc50e60a9488" ]] && [[ "$p5m" = "2b0ac3ed77b469e2c2fcc983707a824c" ]] && [[ "$p6m" = "8ec9ec1d0a53718f2a89fc43c90d275a" ]] && [[ "$p7m" = "4bda7b29153e3445fe23df4b1a4b5707" ]] && [[ "$p8m" = "e2cfec24628e1a63c2232e79a81251e6" ]] && [[ "$p9m" = "8a94799487624e81c3419df0346b2450" ]]; 
+    if [[ "$p1m" = "978124aae588ef07d856a1ef0c9c669c" ]] && [[ "$p2m" = "8a9f5f08ef33879ff79c6026f785247b" ]] && [[ "$p3m" = "3edd3cf329397daa0d39ebd23928aac2" ]] && [[ "$p4m" = "7603a41027baba2de7ee78791ccb01b3" ]] && [[ "$p5m" = "ead03d97ac853097c2c0a3af70fdefca" ]] && [[ "$p6m" = "5a90b5818b1966067ea06fd42bd54ffb" ]] && [[ "$p7m" = "0b5073cf440b3f41f38582a1ee773ee1" ]] && [[ "$p8m" = "bdbc04d91cedb9fce8505fb04e127237" ]] && [[ "$p9m" = "6cbbf0708e94bb00bc45227af1acdc43" ]]; 
         then 
             #
             size=$(du -h ~/pro/fightcade/extras/downloads | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
@@ -155,9 +155,10 @@ echo -e "EXTRACTING. . . ."
 cd /userdata/system/pro/
 mv /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz /userdata/system/pro/
 tar -xf /userdata/system/pro/fightcade.tar.gz 2>/dev/null & spinner $!
+wait 
 rm -rf /userdata/system/pro/fightcade/extras/downloads 2>/dev/null
 size=$(du -h ~/pro/fightcade | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
-echo -e "$size GB"
+echo -e "\n$size GB"
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
