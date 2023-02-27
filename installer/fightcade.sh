@@ -235,6 +235,7 @@ echo -e "DONE,"
 # 
 # set icon for f1 launcher  
 sed -i 's/icon.png/icong.png/g' /userdata/system/pro/fightcade/extras/fightcade.desktop 2>/dev/null
+/userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null 
 # add --disable-gpu to fightcade launcher for compatibility  
 if [[ $(cat "/userdata/system/pro/fightcade/fightcade/Fightcade2.sh" | grep "disable-gpu") = "" ]] || [[ $(cat "/userdata/system/pro/fightcade/fightcade/Fightcade2.sh" | grep "no-sandbox") != "" ]]; then
 sed -i 's/--no-sandbox/--no-sandbox --disable-gpu/g' /userdata/system/pro/fightcade/fightcade/Fightcade2.sh 2>/dev/null
