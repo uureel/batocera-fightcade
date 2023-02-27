@@ -171,6 +171,7 @@ dos2unix /userdata/system/pro/fightcade/Fightcade2.sh 2>/dev/null
 chmod a+x /userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
 chmod a+x /userdata/system/pro/fightcade/extras/wine.sh 2>/dev/null
 chmod a+x /userdata/system/pro/fightcade/Fightcade2.sh 2>/dev/null
+/userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
