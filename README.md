@@ -5,9 +5,9 @@
 <br>
 </b>INSTALLATION <br>
 Run this command in xterm or ssh: </font></b></i><br>
-``` curl -L [coming soon] ```
+``` curl -L [coming soon] ``` <br>
 <br>
 <br>
-SUPPORT / QUESTIONS <br>  
+SUPPORT & QUESTIONS <br> 
 <i>Batocera Nation Discord</i><br>
 https://discord.gg/SWBvBkmn9P
