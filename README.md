@@ -3,11 +3,9 @@
 <i>(& all the dependencies for Batocera 35/36) </i> <br>
 <br>
 <br>
-<br>
-<b>INSTALLATION <br>
+</b>INSTALLATION <br>
 Run this command in xterm or ssh: </font></b></i><br>
 ``` curl -L [coming soon] ```
-<br>
 <br>
 <br>
 SUPPORT / QUESTIONS <br>  
