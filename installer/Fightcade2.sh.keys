@@ -19,6 +19,14 @@
               "KEY_LEFTALT",
               "KEY_F4"
           ]
+        },
+        {
+            "trigger": [
+                "hotkey",
+                "select"
+            ],
+            "type": "key",
+            "target": "KEY_ESC"
         }
     ]
 }
