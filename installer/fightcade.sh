@@ -6,6 +6,7 @@
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 #
 # -- check system before proceeding
+clear; echo
 kernel=$(uname -a | awk '{print $3}' 2>/dev/null)
 if [[ "$kernel" < "5.18" ]]; then 
 echo -e "${RED}ERROR: THIS SYSTEM IS NOT SUPPORTED"
