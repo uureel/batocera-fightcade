@@ -158,7 +158,8 @@ tar -xf /userdata/system/pro/fightcade.tar.gz 2>/dev/null & spinner $!
 wait 
 rm -rf /userdata/system/pro/fightcade/extras/downloads 2>/dev/null
 size=$(du -h ~/pro/fightcade | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
-echo -e "\n$size GB"
+echo -e "\n\n$size GB"
+echo -e "DONE,"
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
