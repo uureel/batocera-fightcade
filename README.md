@@ -1,6 +1,6 @@
 # batocera-fightcade
 <b>THIS PACKAGE PROVIDES FIGHTCADE2 <br>
-</b><i>and all the dependencies for Batocera 35/36 </i> <br>
+</b></i>and all the dependencies for Batocera 35/36 </i> <br>
 <br>
 <br>
 <b>INSTALLATION</b> <br>
