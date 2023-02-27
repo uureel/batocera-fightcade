@@ -41,16 +41,16 @@ chmod a+x /bin/tar 2>/dev/null; chmod a+x /usr/bin/tput 2>/dev/null
 clear
 echo -e "--------------------------------------------------------"
 echo -e "--------------------------------------------------------"
-echo -e "--------------------------------------------------------"
+echo -e ""
 echo -e "BATOCERA.PRO/FIGHTCADE INSTALLER"
-echo -e "--------------------------------------------------------"
+echo -e ""
 echo -e "--------------------------------------------------------"
 echo -e "--------------------------------------------------------"
 echo
 # --------------------------------------------------------------------
 sleep 0.33
 echo -e "THIS WILL INSTALL BATOCERA-FIGHTCADE"
-echo -e "AND ALL NECESSARY DEPENDENCIES"
+echo -e "WITH ALL NECESSARY DEPENDENCIES"
 echo
 echo -e "FIGHTCADE WILL BE AVAILABLE IN PORTS AND F1->APPLICATIONS "
 echo -e "AND INSTALLED IN /USERDATA/SYSTEM/PRO/FIGHTCADE"
@@ -111,6 +111,9 @@ echo -e "$size GB"
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 #
+echo
+echo -e "INSTALLING . . ."
+#
 # check d2u/a+x 
 dos2unix /userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
 dos2unix /userdata/system/pro/fightcade/extras/wine.sh 2>/dev/null
@@ -167,10 +170,18 @@ chmod a+x ~/custom.sh
 #
 # add Fightcade2 to ports
 cp /userdata/system/pro/fightcade/Fightcade2.sh /userdata/roms/ports/Fightcade2.sh 2>/dev/null
+# add pad2key 
+url=https://raw.githubusercontent.com/uureel/batocera-fightcade/main/installer
+wget -q -O /userdata/roms/ports/Fightcade2.sh.keys $url/Fightcade2.sh.keys 2>/dev/null 
 # reload gamelists 
 curl http://127.0.0.1:1234/reloadgames 
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+#
+# finished installing // 
+echo 
+echo -e "FIGHTCADE INSTALLED. " 
+echo 
 # done
-exit 1
+exit 1 
