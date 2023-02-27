@@ -1,15 +1,15 @@
 # batocera-fightcade
-</b>This package provides Fightcade2 & 
+</b>This package provides Fightcade2 & <br>
 all the dependencies for Batocera 35/36 <br>
 <br>
 <br>
 <br>
-<b><i>&nbsp;INSTALLATION: <br>
-RUN THIS COMMAND IN XTERM/SSH: </font></b></i><br>
-```[coming soon]```
+<b><i>&nbsp;INSTALLATION => <br>
+Run this command in xterm or ssh: </font></b></i><br>
+``` curl -L [coming soon] ```
 <br>
 <br>
 <br>
-Questions & troubleshoothing:
-<a href=https://discord.gg/SWBvBkmn9P><i>
->Batocera Nation Discord</i></a>
+Questions & troubleshooting => 
+<i>Batocera Nation Discord</i>
+<a href=https://discord.gg/SWBvBkmn9P>
