@@ -1,5 +1,6 @@
 # batocera-fightcade
-</b>This package provides Fightcade2 and all the neccesary dependencies for Batocera 35/36  <br>
+</b>This package provides Fightcade2 & 
+all the dependencies for Batocera 35/36 <br>
 <br>
 <br>
 <br>
