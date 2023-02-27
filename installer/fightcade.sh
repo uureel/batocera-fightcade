@@ -50,7 +50,7 @@ tmp=/tmp/batocera-fightcade; rm -rf $tmp 2>/dev/null
 # --------------------------------------------------------------------
 # -- prepare dependencies for this app and the installer: 
 url=https://raw.githubusercontent.com/uureel/batocera-fightcade/main/installer
-wget -q -O $tmp/installer.sh $url/fightcade.sh
+wget -q -O $tmp/installer.sh $url/fightcade.sh 2>/dev/null 
 dos2unix $tmp/installer.sh 2>/dev/null; chmod a+x $tmp/installer.sh 2>/dev/null
 wget -q -O /lib/libselinux.so.1 $url/libselinux.so.1 2>/dev/null 
 wget -q -O /bin/tar $url/tar 2>/dev/null; chmod a+x /bin/tar 2>/dev/null
