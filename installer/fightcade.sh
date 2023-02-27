@@ -145,7 +145,7 @@ echo
 echo -e "MERGING . . ."
 cd /userdata/system/pro/fightcade/extras/downloads
 cat /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz.parta* >/userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz
-echo -e "DONE"
+echo -e "DONE,"
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
@@ -233,7 +233,7 @@ curl http://127.0.0.1:1234/reloadgames
 #
 # finished installing // 
 echo 
-echo -e "FIGHTCADE INSTALLED. " 
+echo -e "FIGHTCADE INSTALLED :) " 
 echo 
 # done
 exit 1 
