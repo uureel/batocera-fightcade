@@ -1,0 +1,10 @@
+f24059a6d4720bf712779fffde470d0d  ./fightcade.tar.gz
+38e21dc62048b23cbe43d6de0914f97f  ./fightcade.tar.gz.partaa
+5c601b1608990d12191ae33d301b2ca0  ./fightcade.tar.gz.partab
+12ccf39c925d1e12783acae2aa957490  ./fightcade.tar.gz.partac
+0381e60bf464ae2796ccbc50e60a9488  ./fightcade.tar.gz.partad
+2b0ac3ed77b469e2c2fcc983707a824c  ./fightcade.tar.gz.partae
+8ec9ec1d0a53718f2a89fc43c90d275a  ./fightcade.tar.gz.partaf
+4bda7b29153e3445fe23df4b1a4b5707  ./fightcade.tar.gz.partag
+e2cfec24628e1a63c2232e79a81251e6  ./fightcade.tar.gz.partah
+8a94799487624e81c3419df0346b2450  ./fightcade.tar.gz.partai
