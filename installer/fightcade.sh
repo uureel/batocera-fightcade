@@ -232,6 +232,14 @@ echo -e "DONE,"
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 #
+# add --disable-gpu to fightcade launcher for compatibility  
+if [[ $(cat "/userdata/system/pro/fightcade/fightcade/Fightcade2.sh" | grep "disable-gpu") = "" ]] || [[ $(cat "/userdata/system/pro/fightcade/fightcade/Fightcade2.sh" | grep "no-sandbox") != "" ]]; then
+sed -i 's/--no-sandbox/--no-sandbox --disable-gpu/g' /userdata/system/pro/fightcade/fightcade/Fightcade2.sh 2>/dev/null
+fi 
+#
+#/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+#\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+#
 # finished installing // 
 echo 
 echo 
