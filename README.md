@@ -6,7 +6,7 @@
 <br>
 <b>INSTALLATION</b> <br>
 Run this command in xterm or ssh: </font></b></i><br>
-``` curl -L [coming soon] ``` <br>
+```   curl -L fightcade.batocera.pro | bash   ``` <br>
 <br>
 <br>
 <b>SUPPORT & QUESTIONS</b> <br> 
