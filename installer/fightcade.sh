@@ -154,7 +154,7 @@ echo
 echo -e "EXTRACTING. . . ."
 cd /userdata/system/pro/
 mv /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz /userdata/system/pro/
-tar -xf /userdata/system/pro/fightcade.tar.gz & spinner $! 
+tar -xf /userdata/system/pro/fightcade.tar.gz 2>/dev/null & spinner $!
 rm -rf /userdata/system/pro/fightcade/extras/downloads 2>/dev/null
 size=$(du -h ~/pro/fightcade | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
 echo -e "$size GB"
@@ -227,11 +227,13 @@ url=https://raw.githubusercontent.com/uureel/batocera-fightcade/main/installer
 wget -q -O /userdata/roms/ports/Fightcade2.sh.keys $url/Fightcade2.sh.keys 2>/dev/null 
 # reload gamelists 
 curl http://127.0.0.1:1234/reloadgames 
+echo -e "DONE,"
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 #
 # finished installing // 
+echo 
 echo 
 echo -e "FIGHTCADE INSTALLED :) " 
 echo 
