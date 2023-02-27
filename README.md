@@ -2,7 +2,7 @@
 <b>THIS PACKAGE PROVIDES FIGHTCADE2 <br>
 </b></i>and all the dependencies for Batocera 35/36 </i> <br>
 <br>
-<img src="https://github.com/uureel/batocera-fightcade/raw/main/installer/icong.png" width=88 height=88 /><b><i></b></i><br>
+<img src="https://github.com/uureel/batocera-fightcade/raw/main/installer/icong.png" width=96 height=96 /><b><i></b></i><br>
 <br>
 <b>INSTALLATION</b> <br>
 Run this command in xterm or ssh: </font></b></i><br>
@@ -10,5 +10,5 @@ Run this command in xterm or ssh: </font></b></i><br>
 <br>
 <br>
 <b>SUPPORT & QUESTIONS</b> <br> 
-<i>Batocera Nation Discord</i><br>
+</i>Batocera Nation Discord</i><br>
 https://discord.gg/SWBvBkmn9P
