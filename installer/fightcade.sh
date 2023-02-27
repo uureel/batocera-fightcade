@@ -63,7 +63,7 @@ echo
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 # -- download the package 
 # -- set temp for curl download
-dl=/userdata/system/pro/fightcade/extras/download
+dl=/userdata/system/pro/fightcade/extras/downloads
 rm -rf $dl 2>/dev/null; mkdir $dl 2>/dev/null; cd $dl 
 echo
 echo -e "DOWNLOADING FIGHTCADE [1/9] . . ."
@@ -84,7 +84,7 @@ echo -e "DOWNLOADING FIGHTCADE [8/9] . . ."
 curl --progress-bar --remote-name --location https://github.com/uureel/batocera-fightcade/raw/main/package/fightcade.tar.gz.partah
 echo -e "DOWNLOADING FIGHTCADE [9/9] . . ."
 curl --progress-bar --remote-name --location https://github.com/uureel/batocera-fightcade/raw/main/package/fightcade.tar.gz.partai
-size=$(du -h ~/pro/fightcade/extras/download | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
+size=$(du -h ~/pro/fightcade/extras/downloads | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
 echo -e "DONE, $size GB"
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
@@ -92,8 +92,8 @@ echo -e "DONE, $size GB"
 #
 echo
 echo -e "MERGING . . ."
-cd /userdata/system/pro/fightcade/extras/download
-cat /userdata/system/pro/fightcade/extras/download/fightcade.tar.xz.parta* >/userdata/system/pro/fightcade/extras/download/fightcade.tar.xz
+cd /userdata/system/pro/fightcade/extras/downloads
+cat /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz.parta* >/userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz
 echo -e "DONE"
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
@@ -101,11 +101,11 @@ echo -e "DONE"
 #
 echo
 echo -e "EXTRACTING . . ."
-mv /userdata/system/pro/fightcade/extras/download/fightcade.tar.xz /userdata/system/pro/
+mv /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz /userdata/system/pro/
 cd /userdata/system/pro/
-tar -xf /userdata/system/pro/fightcade/extra/download/fightcade.tar.xz
+tar -xf /userdata/system/pro/fightcade/extra/downloads/fightcade.tar.gz
 cd ~/
-rm -rf /userdata/system/pro/fightcade/extras/download 2>/dev/null
+rm -rf /userdata/system/pro/fightcade/extras/downloads 2>/dev/null
 size=$(du -h ~/pro/fightcade | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
 echo -e "$size GB"
 #
@@ -153,18 +153,18 @@ if [[ -f $csh ]];
             ((l++))
          done
          # 
-         rm $tmp2
-       echo -e '#!/bin/bash' >> $tmp2
-       echo -e "\n$startup \n" >> $tmp2          
-       cat "$tmp1" | sed -e '/./b' -e :n -e 'N;s/\n$//;tn' >> "$tmp2"
-       cp $tmp2 $csh; dos2unix $csh; chmod a+x $csh  
+         rm $tmp2 2>/dev/null
+           echo -e '#!/bin/bash' >> $tmp2
+           echo -e "\n$startup " >> $tmp2          
+           cat "$tmp1" | sed -e '/./b' -e :n -e 'N;s/\n$//;tn' >> "$tmp2"
+           cp $tmp2 $csh 2>/dev/null; dos2unix $csh 2>/dev/null; chmod a+x $csh 2>/dev/null  
    else  #(!f csh)   
        echo -e '#!/bin/bash' >> $csh
        echo -e "\n$startup\n" >> $csh  
-       dos2unix $csh; chmod a+x $csh  
+       dos2unix $csh 2>/dev/null; chmod a+x $csh 2>/dev/null  
 fi 
-dos2unix ~/custom.sh
-chmod a+x ~/custom.sh 
+dos2unix ~/custom.sh 2>/dev/null
+chmod a+x ~/custom.sh 2>/dev/null
 #
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
