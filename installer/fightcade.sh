@@ -137,7 +137,7 @@ if [[ -f "$p1" ]] && [[ -f "$p2" ]] && [[ -f "$p3" ]] && [[ -f "$p4" ]] && [[ -f
             exit 1 & curl -L fightcade.batocera.pro | bash
     fi
 fi
-#
+# 
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 #
@@ -154,7 +154,7 @@ echo
 echo -e "EXTRACTING. . . ."
 cd /userdata/system/pro/
 mv /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz /userdata/system/pro/
-tar -xf /userdata/system/pro/fightcade.tar.gz 2>/dev/null & spinner $!
+/bin/tar -xf /userdata/system/pro/fightcade.tar.gz 
 wait 
 rm -rf /userdata/system/pro/fightcade/extras/downloads 2>/dev/null
 size=$(du -h ~/pro/fightcade | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
@@ -175,14 +175,14 @@ chmod a+x /userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
 chmod a+x /userdata/system/pro/fightcade/extras/wine.sh 2>/dev/null
 chmod a+x /userdata/system/pro/fightcade/Fightcade2.sh 2>/dev/null
 /userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
-#
+# 
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
-#
+# 
 # -------------------------------------------------------------------
 # ADD TO BATOCERA AUTOSTART > /USERDATA/SYSTEM/CUSTOM.SH TO ENABLE F1
 # -------------------------------------------------------------------
-#
+# 
 csh=/userdata/system/custom.sh; dos2unix $csh 2>/dev/null
 startup="/userdata/system/pro/fightcade/extras/startup.sh"
 if [[ -f $csh ]];
