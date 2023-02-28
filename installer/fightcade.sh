@@ -133,8 +133,8 @@ if [[ -f "$p1" ]] && [[ -f "$p2" ]] && [[ -f "$p3" ]] && [[ -f "$p4" ]] && [[ -f
             echo -e "DOWNLOAD WENT BAD! ;( "
             sleep 2
             echo -e "RESTARTING INSTALLER . . ."
-            sleep 3
-            exit 0 & /tmp/batocera-fightcade/installer.sh 
+            sleep 2
+            exit 0 & curl -L fightcade.batocera.pro | bash
     fi
 fi
 #
@@ -183,7 +183,7 @@ chmod a+x /userdata/system/pro/fightcade/Fightcade2.sh 2>/dev/null
 # ADD TO BATOCERA AUTOSTART > /USERDATA/SYSTEM/CUSTOM.SH TO ENABLE F1
 # -------------------------------------------------------------------
 #
-csh=/userdata/system/custom.sh; dos2unix $csh
+csh=/userdata/system/custom.sh; dos2unix $csh 2>/dev/null
 startup="/userdata/system/pro/fightcade/extras/startup.sh"
 if [[ -f $csh ]];
    then
