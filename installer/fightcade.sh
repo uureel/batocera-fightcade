@@ -158,7 +158,6 @@ cd /userdata/system/pro/
 mv /userdata/system/pro/fightcade/extras/downloads/fightcade.tar.gz /userdata/system/pro/
 chmod a+x /bin/tar 2>/dev/null
 /bin/tar -xf /userdata/system/pro/fightcade.tar.gz 
-wait 
 rm -rf /userdata/system/pro/fightcade/extras/downloads 2>/dev/null
 size=$(du -h ~/pro/fightcade | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
 echo -e "$size GB"
