@@ -14,7 +14,7 @@ echo -e "${RED}YOU NEED BATOCERA VERSION 35+"
 sleep 3
 exit 0; exit 1; exit 2
 fi 
-free=$(df -h | /bin/grep "/media/SHARE" | awk '{print $4}' | sed 's,G,,g' | cut -d "." -f1)
+free="$(df /userdata | awk 'END {print int($4/(1024*1024))}')"
 if [[ "$free" -le "4" ]]; then 
 echo -e "${RED}ERROR: YOU NEED AT LEAST 4GB OF FREE DISK SPACE ON /USERDATA "
 echo -e "${RED}YOU HAVE $free GB"
