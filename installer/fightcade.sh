@@ -224,11 +224,39 @@ chmod a+x ~/custom.sh 2>/dev/null
 #/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 #\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 # 
-# add Fightcade2 to ports
-cp /userdata/system/pro/fightcade/Fightcade2.sh /userdata/roms/ports/Fightcade2.sh 2>/dev/null
-# add pad2key 
+# get updated files:
+# --- 
+url=https://raw.githubusercontent.com/uureel/batocera-fightcade/main/installer
+# startup 
+wget -q -O /userdata/system/pro/fightcade/extras/startup.sh $url/startup.sh 2>/dev/null 
+dos2unix /userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
+chmod a+x /userdata/system/pro/fightcade/extras/startup.sh 2>/dev/null
+# launcher 
+wget -q -O /userdata/system/pro/fightcade/Fightcade2.sh $url/Fightcade2.sh 2>/dev/null 
+dos2unix /userdata/system/pro/fightcade/Fightcade2.sh 2>/dev/null
+chmod a+x /userdata/system/pro/fightcade/Fightcade2.sh 2>/dev/null
+# winesync 
+wget -q -O /userdata/system/pro/fightcade/extras/winesync.sh $url/winesync.sh 2>/dev/null 
+dos2unix /userdata/system/pro/fightcade/extras/winesync.sh 2>/dev/null
+chmod a+x /userdata/system/pro/fightcade/extras/winesync.sh 2>/dev/null
+# syncwine 
+wget -q -O /userdata/system/pro/fightcade/extras/syncwine.sh $url/syncwine.sh 2>/dev/null 
+dos2unix /userdata/system/pro/fightcade/extras/syncwine.sh 2>/dev/null
+chmod a+x /userdata/system/pro/fightcade/extras/syncwine.sh 2>/dev/null
+# unwine 
+wget -q -O /userdata/system/pro/fightcade/extras/unwine.sh $url/unwine.sh 2>/dev/null 
+dos2unix /userdata/system/pro/fightcade/extras/unwine.sh 2>/dev/null
+chmod a+x /userdata/system/pro/fightcade/extras/unwine.sh 2>/dev/null
+# wine 
+wget -q -O /userdata/system/pro/fightcade/extras/wine.sh $url/wine.sh 2>/dev/null 
+dos2unix /userdata/system/pro/fightcade/extras/wine.sh 2>/dev/null
+chmod a+x /userdata/system/pro/fightcade/extras/wine.sh 2>/dev/null
+# pad2key 
 url=https://raw.githubusercontent.com/uureel/batocera-fightcade/main/installer
 wget -q -O /userdata/roms/ports/Fightcade2.sh.keys $url/Fightcade2.sh.keys 2>/dev/null 
+# ---
+# add Fightcade2 to ports
+cp /userdata/system/pro/fightcade/Fightcade2.sh /userdata/roms/ports/Fightcade2.sh 2>/dev/null
 # reload gamelists 
 curl http://127.0.0.1:1234/reloadgames 
 echo -e "DONE,"
