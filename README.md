@@ -5,7 +5,7 @@
 <img src="https://github.com/uureel/batocera-fightcade/raw/main/installer/icong.png" width=96 height=96 /><b><i></b></i><br>
 <br>
 <b>INSTALLATION</b> <br>
-<b><i>Run this command in xterm or ssh: </font></b></i><br>
+</b><i>Run this command in xterm or ssh: </font></b></i><br>
 ```   curl -L fightcade.batocera.pro | bash   ``` <br>
 <br>
 <br>
