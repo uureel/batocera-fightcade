@@ -10,5 +10,5 @@
 <br>
 <br>
 <b>SUPPORT & QUESTIONS</b> <br> 
-<i>Batocera Nation Discord</i><br>
+<i>Batocera Nation Discord:</i><br>
 https://discord.gg/SWBvBkmn9P
