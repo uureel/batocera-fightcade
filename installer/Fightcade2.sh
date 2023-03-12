@@ -1,7 +1,7 @@
 #!/bin/bash
 # BATOCERA-FIGHTCADE  
 ###########################################################################
-# check if batocera is version 36+ 
+# check if batocera is version 35+ 
 kernel=$(uname -a | awk '{print $3}' 2>/dev/null)
 if [[ "$kernel" < "5.18" ]]; then 
 DISPLAY=:0.0 xterm -fs 10 -fullscreen -fg white -bg black -fa Monospace -en UTF-8 -e bash -c "echo -e \"  █\n  █  ERROR: FIGHTCADE REQUIRES BATOCERA VERSION 35+ \n  █\" & sleep 3" 2>/dev/null && exit 0 & exit 1 & exit 2
