@@ -129,7 +129,7 @@ if [[ -f "$p1" ]] && [[ -f "$p2" ]] && [[ -f "$p3" ]] && [[ -f "$p4" ]] && [[ -f
         then 
             #
             size=$(du -h ~/pro/fightcade/extras/downloads | tail -n 1 | awk '{print $1}' | sed 's,G,,g')
-            echo -e "DONE, $size GB"
+            echo -e "DONE, $size "
         else 
             echo
             echo -e "DOWNLOAD WENT BAD! ;( "
