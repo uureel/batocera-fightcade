@@ -14,9 +14,9 @@ dos2unix /userdata/system/pro/fightcade/extras/winesync.sh 2>/dev/null
 chmod a+x /userdata/system/pro/fightcade/extras/winesync.sh 2>/dev/null 
 ###########################################################################
 # link rom folders for symlinking filesystems 
-filesystem=$(blkid | grep "\"SHARE\"" | sed 's,^.*TYPE=,,g' | sed 's,",,g')
+fs=$(blkid | grep "$(df -h /userdata | awk 'END {print $1}')" | sed 's,^.*TYPE=,,g' | sed 's,",,g' | tr 'a-z' 'A-Z')
 #--------------------------------------------------------------------------
- if [[ "$filesystem" = "ext4" ]] || [[ "$filesystem" = "btrfs" ]]; 
+ if [[ "$fs" == *"EXT"* ]] || [[ "$fs" == *"BTR"* ]]; 
  then 
 #--------------------------------------------------------------------------
 #   0) show loading info 
