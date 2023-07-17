@@ -60,15 +60,15 @@ function batocera-fightcade-wine() {
 	ln -s /userdata/system/pro/fightcade/wine/usr/bin/wineserver-stable /usr/bin/winserver-stable 2>/dev/null
 	ln -s /userdata/system/pro/fightcade/wine/usr/bin/wineserver-stable /usr/bin/winserver 2>/dev/null
 
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/wine-stable /usr/bin/wine 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/wine64-stable /usr/bin/wine64 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/wineboot-stable /usr/bin/wineboot 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/winecfg-stable /usr/bin/winecfg 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/wineconsole-stable /usr/bin/wineconsole 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/winedbg-stable /usr/bin/windbg 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/winefile-stable /usr/bin/winefile 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/winepath-stable /usr/bin/winepath 2>/dev/null
-	ln -sf /userdata/system/pro/fightcade/wine/usr/bin/wineserver-stable /usr/bin/winserver 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/wine-stable /usr/bin/wine 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/wine64-stable /usr/bin/wine64 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/wineboot-stable /usr/bin/wineboot 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/winecfg-stable /usr/bin/winecfg 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/wineconsole-stable /usr/bin/wineconsole 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/winedbg-stable /usr/bin/windbg 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/winefile-stable /usr/bin/winefile 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/winepath-stable /usr/bin/winepath 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/bin/wineserver-stable /usr/bin/winserver 2>/dev/null
 
 	cp -r /userdata/system/pro/fightcade/wine/usr/lib/x86_64-linux-gnu/libunwind* /lib/ 2>/dev/null
 	cp -r /userdata/system/pro/fightcade/wine/usr/lib/x86_64-linux-gnu/libpcre* /lib/ 2>/dev/null
@@ -76,14 +76,9 @@ function batocera-fightcade-wine() {
 	ln -s /userdata/system/pro/fightcade/wine/usr/lib/x86_64-linux-gnu /usr/x86_64-linux-gnu 2>/dev/null
 	ln -s /userdata/system/pro/fightcade/wine/usr/lib/i386-linux-gnu /usr/i386-linux-gnu 2>/dev/null
 
-	cp -r /userdata/system/pro/fightcade/wine/usr/lib/i386-linux-gnu/ld-linux.so.2 /lib32/ld-linux.so.2 2>/dev/null
-	cp -r /userdata/system/pro/fightcade/wine/usr/lib/i386-linux-gnu/ld-linux.so.2 /usr/lib/i386-linux-gnu/ld-linux.so.2 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/lib/i386-linux-gnu/ld-linux.so.2 /lib32/ld-linux.so.2 2>/dev/null
+	cp /userdata/system/pro/fightcade/wine/usr/lib/i386-linux-gnu/ld-linux.so.2 /usr/lib/i386-linux-gnu/ld-linux.so.2 2>/dev/null
 
-	# additional fixes for v37 
-	ln -sf /userdata/system/pro/fightcade/extras/liblua5.2.so.0 /lib/liblua5.2.so.0 2>/dev/null 
-	ln -sf /userdata/system/pro/fightcade/extras/liblua5.3.so.0 /lib/liblua5.3.so.0 2>/dev/null 
-	ln -sf /userdata/system/pro/fightcade/extras/libzip.so.4 /lib/libzip.so.4 2>/dev/null 
-	ln -sf /userdata/system/pro/fightcade/extras/libzip.so.5 /lib/libzip.so.5 2>/dev/null 
 }
 export -f batocera-fightcade-wine 
 
