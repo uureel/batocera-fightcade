@@ -70,7 +70,7 @@ echo
 # --------------------------------------------------------------------
 sleep 0.33
 echo -e "THIS WILL INSTALL BATOCERA-FIGHTCADE"
-echo -e "WITH ALL NECESSARY DEPENDENCIES"
+echo -e "WITH ALL DEPENDENCIES FOR BATOCERA V36/37/38"
 echo
 echo -e "FIGHTCADE WILL BE AVAILABLE IN PORTS AND F1->APPLICATIONS "
 echo -e "AND INSTALLED IN /USERDATA/SYSTEM/PRO/FIGHTCADE"
